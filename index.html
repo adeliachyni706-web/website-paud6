@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning untuk Paud</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigasi -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-child"></i>
+                    <h1>Belajar Seru PAUD</h1>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="#beranda" class="active nav-link"><i class="fas fa-home"></i> Beranda</a></li>
+                        <li><a href="#layanan" class="nav-link"><i class="fas fa-info-circle"></i> Informasi</a></li>
+                        <li><a href="#kontak" class="nav-link"><i class="fas fa-envelope"></i> Kontak</a></li>
+                        <li><a href="#tentang" class="nav-link"><i class="fas fa-users"></i> Tentang Kami</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="container">
+        <!-- Indikator Halaman Aktif -->
+        <div class="page-indicator" id="pageIndicator">Halaman: Beranda</div>
+        
+        <!-- Halaman Beranda -->
+        <section id="beranda" class="page active-page fade-in">
+            <div class="hero">
+                <div class="decoration decoration-1">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="decoration decoration-2">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h2>Selamat Datang di Dunia Belajar Seru!</h2>
+                <p>Tempat belajar interaktif untuk anak usia dini dengan materi menyenangkan yang disesuaikan dengan tahap perkembangan anak.</p>
+                <div class="hero-buttons">
+                    <a href="#tentang" class="btn btn-secondary nav-link"><i class="fas fa-question-circle"></i> Pelajari Lebih Lanjut</a>
+                </div>
+            </div>
+            
+            <h2 class="section-title">Materi Belajar Interaktif</h2>
+            
+            <div class="materials">
+                <!-- Materi 1: Mengenal Huruf -->
+                <div class="material-card">
+                    <img src="gambar abcd.jpg" alt="Mengenal Huruf" class="material-image">
+                    <div class="material-content">
+                        <h3 class="material-title">Mengenal Huruf Dengan Mendengarkan Melalui Audio</h3>
+                        <p class="material-description">Belajar mengenal huruf A sampai Z dengan suara yang menyenangkan. Cocok untuk anak usia 3-5 tahun.</p>
+                        <div class="audio-player">
+                            <audio controls>
+                                <source src="audio1.mpeg" type="audio/mpeg">
+                            </audio>
+                        </div>
+                        <button class="btn btn-primary" onclick="playAudio(0)"><i class="fas fa-play"></i> Dengarkan Pelajaran</button>
+                    </div>
+                </div>
+                
+                <!-- Materi 2: Mengenal Angka -->
+                <div class="material-card">
+                    <img src="gambar angka.jpg" alt="Mengenal Angka" class="material-image">
+                    <div class="material-content">
+                        <h3 class="material-title">Mengenal Angka Dengan Mendengarkan Melalui Audio</h3>
+                        <p class="material-description">Belajar menghitung dari 1 sampai 10 dengan ilustrasi menarik. Dilengkapi audio pengucapan yang jelas.</p>
+                        <div class="audio-player">
+                            <audio controls>
+                                <source src="audio2.mpeg" type="audio/mpeg">
+                                Browser Anda tidak mendukung elemen audio.
+                            </audio>
+                        </div>
+                        <button class="btn btn-primary" onclick="playAudio(1)"><i class="fas fa-play"></i> Dengarkan Pelajaran</button>
+                    </div>
+                </div>
+                
+                <!-- Materi 3: Mengenal Warna -->
+                <div class="material-card">
+                    <img src="gambar warna.jpg" alt="Mengenal Warna" class="material-image">
+                    <div class="material-content">
+                        <h3 class="material-title">Mengenal Warna Dengan Mendengarkan Melalui Audio</h3>
+                        <p class="material-description">Mengenal berbagai warna dasar dengan contoh benda-benda di sekitar kita. Dilengkapi dengan kuis interaktif.</p>
+                        <div class="audio-player">
+                            <audio controls>
+                                <source src="audio3.mpeg" type="audio/mpeg">
+                                Browser Anda tidak mendukung elemen audio.
+                            </audio>
+                        </div>
+                        <button class="btn btn-primary" onclick="playAudio(2)"><i class="fas fa-play"></i> Dengarkan Pelajaran</button>
+                    </div>
+                </div>
+                
+                <!-- Materi 4: Mengenal Bentuk -->
+                <div class="material-card">
+                    <img src="gambar hewan.jpg" alt="Mengenal Bentuk" class="material-image">
+                    <div class="material-content">
+                        <h3 class="material-title">Mengenal Suara Hewan Dengan Mendengarkan Melalui Audio</h3>
+                        <p class="material-description">Belajar mengenal hewan seperti kucing, anjing, bebek, dll</p>
+                        <div class="audio-player">
+                            <audio controls>
+                                <source src="audio4.mpeg" type="audio/mpeg">
+                                Browser Anda tidak mendukung elemen audio.
+                            </audio>
+                        </div>
+                        <button class="btn btn-primary" onclick="playAudio(3)"><i class="fas fa-play"></i> Dengarkan Pelajaran</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bagian Video Pembelajaran YouTube -->
+            <h2 class="section-title">Video Pembelajaran Seru</h2>
+            <p class="section-description">Tonton video pembelajaran menarik dari YouTube yang akan membantu anak belajar sambil bermain:</p>
+            
+            <div class="video-section">
+                <div class="video-container">
+                    <div class="video-player">
+                        <iframe src="video1.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Belajar Huruf ABC untuk Anak PAUD</h3>
+                        <p class="video-description">Video edukasi untuk belajar mengenal huruf alphabet dari A sampai Z dengan lagu yang menyenangkan.</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> Durasi: 5:32</span>
+                            <span><i class="fas fa-eye"></i> Untuk usia: 3-6 tahun</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-container">
+                    <div class="video-player">
+                        <iframe src="vidio2.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Belajar Berhitung 1-10 untuk Anak</h3>
+                        <p class="video-description">Belajar menghitung dari 1 sampai 10 dengan animasi yang menarik dan mudah dipahami oleh anak-anak.</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> Durasi: 7:15</span>
+                            <span><i class="fas fa-eye"></i> Untuk usia: 3-5 tahun</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-container">
+                    <div class="video-player">
+                        <iframe src="video3.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Belajar Mengenal Warna</h3>
+                        <p class="video-description">Video interaktif untuk mengenal warna.</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> Durasi: 8:42</span>
+                            <span><i class="fas fa-eye"></i> Untuk usia: 4-6 tahun</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-container">
+                    <div class="video-player">
+                        <iframe src="video4.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Lagu Anak: Binatang di Kebun Binatang</h3>
+                        <p class="video-description">Lagu edukatif untuk mengenal berbagai jenis binatang dan suaranya dengan irama yang ceria.</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> Durasi: 4:18</span>
+                            <span><i class="fas fa-eye"></i> Untuk usia: 2-6 tahun</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Halaman Informasi -->
+        <section id="layanan" class="page" style="display: none;">
+            <div class="page-content">
+                <h2><i class="fas fa-info-circle"></i>Informasi</h2>
+                <p>Website Belajar Seru PAUD menyediakan berbagai layanan pembelajaran interaktif untuk anak usia dini (3-6 tahun). Semua materi dirancang khusus oleh ahli pendidikan anak usia dini.</p>
+                
+                <h3>Fitur Pembelajaran Kami:</h3>
+                <ul class="service-list">
+                    <li><strong>Materi Audio-Visual:</strong> Konten belajar dengan gambar menarik dan audio yang jelas untuk membantu anak memahami konsep dasar.</li>
+                    <li><strong>Aktivitas Interaktif:</strong> Permainan edukatif yang melatih motorik halus dan kognitif anak.</li>
+                    <li><strong>Laporan Perkembangan:</strong> Orang tua dapat memantau perkembangan belajar anak melalui laporan berkala.</li>
+                    <li><strong>Materi Berjenjang:</strong> Materi disusun berdasarkan tingkat kesulitan, dari dasar hingga menengah.</li>
+                    <li><strong>Akses 24/7:</strong> Anak dapat belajar kapan saja sesuai dengan waktu yang tersedia.</li>
+                </ul> 
+
+                <h3>Fitur Peran Guru:</h3>
+                <ul class="service-list">
+                    <li><strong>Memantau Perkembangan Anak-Anak:</strong>Mengamati,mencatat, dan menilai bagaimana kemapuan dan perilaku anak berkembang dari waktu ke waktu.</li>
+                    <li><strong>Memberikan Ajaran yang Baik:</strong>Menanamkan nilai kebiasaan danperilaku positif kepada anak usia dini agar mereka tumbuh menjadi anak yang bberakhlak baik dan mandiri.</li>
+                    <li><strong>Mengajarkan Sikap Sopan dan Santun:</strong>Membiasakan anak untuk berperilaku baik, hormat, dan ramah kepada orang tua dan kepada orang lain dalam kehidupan sehari-hari.</li>
+                    <li><strong>Membimbing Anak dalam Belajar dan Bermain:</strong>Mendampingi, mengarahkan, dan membantu anak saat melakukan kegiatan belajar dan bermain agar kegiatan tersebut berjalan aman, menyenangkan, dan bermanfaat.</li>
+                    <li><strong>Memberikan Contoh Perilaku yang Baik:</strong>Menunjukkan sikap dan perbatan secara positif secara langsung.</li>
+                </ul> 
+                </div>
+            </div>
+        </section>
+        
+        <!-- Halaman Kontak -->
+        <section id="kontak" class="page" style="display: none;">
+            <div class="page-content">
+                <h2><i class="fas fa-envelope"></i> Hubungi Kami</h2>
+                <p>Jika Anda memiliki pertanyaan, saran, atau membutuhkan bantuan, silakan hubungi kami melalui formulir di bawah ini.</p>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap:</label>
+                        <input type="text" id="name" name="name" required placeholder="Nama Anda">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="email@contoh.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subjek:</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Pilih subjek</option>
+                            <option value="pertanyaan">Pertanyaan tentang materi</option>
+                            <option value="bantuan">Bantuan teknis</option>
+                            <option value="saran">Saran pengembangan</option>
+                            <option value="lainnya">Lainnya</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Pesan:</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tulis pesan Anda di sini..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Kirim Pesan</button>
+                </form>
+                
+                <div style="margin-top: 30px;">
+                    <h3>Informasi Kontak Lainnya:</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Alamat: Jl. Pendidikan No. 123, Kota Belajar</p>
+                    <p><i class="fas fa-phone"></i> Telepon: (021) 1234-5678</p>
+                    <p><i class="fas fa-envelope"></i> Email: info@belajarseru-paud.id</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Halaman Tentang -->
+        <section id="tentang" class="page" style="display: none;">
+            <div class="page-content">
+                <h2><i class="fas fa-users"></i> Tentang Belajar Seru PAUD</h2>
+                <p>Belajar Seru PAUD adalah platform e-learning yang dikhususkan untuk anak usia dini (3-6 tahun). Kami berkomitmen untuk menyediakan materi pembelajaran yang interaktif, menyenangkan, dan sesuai dengan tahap perkembangan anak.</p>
+                
+                <h3>Visi Kami:</h3>
+                <p>Menjadi platform e-learning terdepan yang membantu anak-anak Indonesia mengembangkan potensi mereka sejak dini melalui metode pembelajaran yang menyenangkan.</p>
+                
+                <h3>Misi Kami:</h3>
+                <ul class="about-list">
+                    <li>Menyediakan materi pembelajaran berkualitas untuk anak usia dini</li>
+                    <li>Mengembangkan metode pembelajaran interaktif yang menarik minat anak</li>
+                    <li>Memfasilitasi orang tua dalam memantau perkembangan belajar anak</li>
+                    <li>Berkolaborasi dengan ahli pendidikan untuk terus meningkatkan kualitas materi</li>
+                </ul>
+                
+                <h3>Tim Kami:</h3>
+                <div class="team-container">
+                    <div class="team-member">
+                        <h4><i class="fas fa-user-graduate"></i> Adelia Cahyani, S.Pd.AUD</h4>
+                        <p>Ahli Pendidikan Anak Usia Dini dengan pengalaman lebih dari 15 tahun.</p>
+                    </div>
+                    <div class="team-member">
+                        <h4><i class="fas fa-paint-brush"></i> Made Danu Windana, S.Sn</h4>
+                        <p>Desainer pembelajaran dengan spesialisasi konten visual untuk anak-anak.</p>
+                    </div>
+                    <div class="team-member">
+                        <h4><i class="fas fa-music"></i> Jumra, S.Pd</h4>
+                        <p>Spesialis konten audio dan musik untuk pembelajaran anak usia dini.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Belajar Seru PAUD</h3>
+                    <p>Platform e-learning interaktif untuk anak usia dini. Membuat belajar menjadi pengalaman yang menyenangkan!</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/jumra.jum.657124"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/belajarserupaud_?igsh=Z3pqd25hNGFvcWhv"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com/@adeliacahyani1072?si=EleeBcnfCjq7-zwc"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/qr/3UZ6T437OYGBC1"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Link Cepat</h3>
+                    <p><a href="#beranda" class="nav-link footer-link">Beranda</a></p>
+                    <p><a href="#layanan" class="nav-link footer-link">Layanan</a></p>
+                    <p><a href="#kontak" class="nav-link footer-link">Kontak</a></p>
+                    <p><a href="#tentang" class="nav-link footer-link">Tentang Kami</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Jl. Pendidikan No. 123, Kota Belajar</p>
+                    <p><i class="fas fa-phone"></i> (021) 1234-5678</p>
+                    <p><i class="fas fa-envelope"></i> info@belajarseru-paud.id</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 Belajar Seru PAUD. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
